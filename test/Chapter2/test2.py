@@ -24,7 +24,8 @@ def RGB_to_HSI(r, g, b):
     return int(h), int(s * 100), int(i * 255)
 
 
-image = io.imread('flower.jpg')
+# image = io.imread('test.jpg')
+image = data.coffee()
 hsi_image = np.zeros(image.shape, dtype='uint8')
 for i in range(image.shape[0]):
     for j in range(image.shape[1]):
